@@ -47,9 +47,13 @@ void print_array(const int *array, size_t size);
 void swap_nums(int *a, int *b);
 void bubble_sort(int *array, size_t size);
 
-/**** insertion    ******/
+/**** insertion sort   ******/
 void swap_list_nodes(listint_t **head, listint_t **node1, listint_t *node2);
 void insertion_sort_list(listint_t **list);
+
+/******* seletion sort   ********/
+void selection_sort(int *array, size_t size);
+
 
 
 #endif
