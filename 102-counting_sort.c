@@ -52,17 +52,17 @@ void arrange_sort(int *array, size_t size)
 		my_count[array[i]] += 1;
 	for (i = 0; i < (maximum + 1); i++)
 		my_count[i] += my_count[i - 1];
-	print_array(count, max + 1);
+	print_array(my_count, maximum + 1);
 
 	for (i = 0; i < (int)size; i++)
 	{
-		sorted[count[array[i]] - 1] = array[i];
-		count[array[i]] -= 1;
+		sort[my_count[array[i]] - 1] = array[i];
+		my_count[array[i]] -= 1;
 	}
 
 	for (i = 0; i < (int)size; i++)
-		array[i] = sorted[i];
+		array[i] = sort[i];
 
-	free(sorted);
-	free(count);
+	free(sort);
+	free(my_count);
 }
