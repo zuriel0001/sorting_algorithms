@@ -63,5 +63,12 @@ void quick_sort(int *array, size_t size);
 /*********   Shell sort - Knuth Sequence    *******/
 void shell_sort(int *array, size_t size);
 
+/****** Cocktail shaker sort   *******/
+void swap_Nextnode(listint_t **list, listint_t **tail,
+				listint_t **current_node);
+void swap_Prev_node(listint_t **list, listint_t **tail,
+				listint_t **current_node);
+void cocktail_sort_list(listint_t **list);
+
 
 #endif
