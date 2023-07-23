@@ -11,23 +11,29 @@ int get_max(int *array, int size)
 {
 	int m, i;
 
-	for (m = array[0], i = 1; i < size; i++)
+	m = array[0];
+	i = 1;
+
+	while (i < size)
 	{
-		if (array[i] > max)
+		if (array[i] > m)
 			m = array[i];
+		i++;
 	}
 
 	return (m);
 }
 
 /**
- * counting_sort - Sort an array of integers in ascending order using
- * the counting sort algorithm.
- * @array: An array of integers.
- * @size: The size of the array.
+ * counting_sort - function that sort an array of integers in ascending
+ *                 order using the counting sort algorithm.
  *
- * Description: Prints the counting array after setting it up.
+ * @array: An array of integers to be sorted
+ * @size: The size of the array to be sorted
+ *
+ * Description: Prints the counting array after its set up
  */
+
 void counting_sort(int *array, size_t size)
 {
 	int *my_count, *sort, maximum, i;
@@ -39,7 +45,7 @@ void counting_sort(int *array, size_t size)
 	if (sort == NULL)
 		return;
 	maximum = get_max(array, size);
-	my_count = malloc(sizeof(int) * (max + 1));
+	my_count = malloc(sizeof(int) * (maximum + 1));
 	if (my_count == NULL)
 	{
 		free(sort);
