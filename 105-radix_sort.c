@@ -42,8 +42,6 @@ void count_sort_alg(int *array, size_t size, int sig, int *buff)
 	size_t idx;
 
 	idx = 0;
-	/*count[10] = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0};*/
-
 	while (idx < size)
 	{
 		count[(array[idx] / sig) % 10] += 1;
