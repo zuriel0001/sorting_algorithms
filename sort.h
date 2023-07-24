@@ -79,4 +79,9 @@ void merge_sort(int *array, size_t size);
 /******* heap sort   ******/
 void heap_sort(int *array, size_t size);
 
+/****** Radix sort ******/
+void radix_sort(int *array, size_t size);
+
+
+
 #endif
