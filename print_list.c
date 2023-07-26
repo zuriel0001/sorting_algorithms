@@ -4,7 +4,7 @@
 /**
 * print_list - function that Prints a list of integers
 *
-* @list: The list to be printed
+* @list: list to be printed
 */
 void print_list(const listint_t *list)
 {
