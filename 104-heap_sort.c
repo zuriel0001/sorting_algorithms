@@ -21,7 +21,7 @@ void swap_nums(int *a, int *b)
  * heapify_max - function to Turn a binary
  * tree into a complete binary heap.
  *
- * @array: An array of integers representing a binary tree.
+ * @array:array of integers representing a binary tree.
  * @size: The size of the array or tree.
  * @base: The index of the base row of the tree.
  * @root: The root node of the binary tree.
